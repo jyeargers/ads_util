@@ -26,15 +26,14 @@ public class YamlConfigRunner {
 
     /**
      * Load 'config.yml' from classpath
-     * @throws Exception
      */
-    public YamlConfigRunner() throws Exception {
+    public YamlConfigRunner() {
         this("config.yml");
     }
 
     /**
-     * load 'configFile' from classpath
-     * @param configFile
+     * load <i>configFile</i> from classpath
+     * @param configFile Name of yaml config file to load from classpath
      */
     public YamlConfigRunner(String configFile) {
         try {
@@ -76,8 +75,8 @@ public class YamlConfigRunner {
 
     /**
      * Returns typeof for given key
-     * @param key
-     * @return
+     * @param key config key to lookup
+     * @return typeof for given key
      */
     public String getValueType(String key) {
         return properties.get(key).getClass().getName();
@@ -85,8 +84,8 @@ public class YamlConfigRunner {
 
     /**
      * Get a String value
-     * @param key
-     * @return
+     * @param key config key to lookup
+     * @return String value or null if not found
      */
     public String getString(String key) {
         if(properties.get(key) instanceof String) {
@@ -99,8 +98,8 @@ public class YamlConfigRunner {
 
     /**
      * Get an Integer value
-     * @param key
-     * @return
+     * @param key config key to lookup
+     * @return Integer value or null if not found
      */
     public Integer getInt(String key) {
         if(properties.get(key) instanceof Integer) {
@@ -113,8 +112,8 @@ public class YamlConfigRunner {
 
     /**
      * Get a Long value
-     * @param key
-     * @return
+     * @param key config key to lookup
+     * @return Long value or null if not found
      */
     public Long getLong(String key) {
         if(properties.get(key) instanceof Long) {
@@ -127,8 +126,8 @@ public class YamlConfigRunner {
 
     /**
      * Get a Double value
-     * @param key
-     * @return
+     * @param key config key to lookup
+     * @return Double value or null if not found
      */
     public Double getDouble(String key) {
         if(properties.get(key) instanceof Double) {
@@ -141,8 +140,8 @@ public class YamlConfigRunner {
 
     /**
      * Get a BigInteger value
-     * @param key
-     * @return
+     * @param key config key to lookup
+     * @return BigInteger value or null if not found
      */
     public BigInteger getBigInt(String key) {
         if(properties.get(key) instanceof BigInteger) {
@@ -155,8 +154,8 @@ public class YamlConfigRunner {
 
     /**
      * Get a List value
-     * @param key
-     * @return
+     * @param key config key to lookup
+     * @return List value or null if not found
      */
     public List getList(String key) {
         if(properties.get(key) instanceof List) {

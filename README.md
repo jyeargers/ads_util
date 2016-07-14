@@ -30,10 +30,12 @@
 
 `./gradlew clean build`
 
+- NOTE: This will generate javadoc and sources .jar files also
+
 ## To deploy to mavenlocal:
 
 `./gradlew publishToMavenLocal`
 
 ## To deploy to artifactory:
 
-`./gradlew publish`
+`./gradlew artifactoryPublish`
