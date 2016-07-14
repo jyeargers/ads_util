@@ -1,0 +1,27 @@
+rootkey: rootvalue
+rootint: 1234
+
+somearray:
+   - one
+   - two
+
+nested0:
+   level0:
+      - four
+      - five
+
+nested1:
+  level1:
+    string0: thing0thing
+    string1: thing1thing
+
+    int0: 123
+    string2: 10.20.30.40
+    long0: 1234567890123
+    bigint0: 12345678901234567890
+    double0: 123.456
+    array0:
+      - 123
+      - 456
+      - 789
+
