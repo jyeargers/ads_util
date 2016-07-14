@@ -20,7 +20,7 @@
 ```        
    ... 
    
-   // See [config.yml](https://github.com/jyeargers/ads_util/blob/master/src/test/resources/config.yml) for source
+   See [config.yml](https://github.com/jyeargers/ads_util/blob/master/src/test/resources/config.yml) for sample config and layout
 ```java
    String str = config.getString("rootkey");
    List<Integer> list2 = yamlConfigRunner.getList("nested1/level1/array0");
