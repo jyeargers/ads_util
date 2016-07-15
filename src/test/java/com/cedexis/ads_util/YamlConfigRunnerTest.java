@@ -34,7 +34,7 @@ public class YamlConfigRunnerTest {
     public void flatten_test0() throws Exception {
         yamlConfigRunner = PowerMockito.spy(new YamlConfigRunner());
 
-        assertEquals("java.lang.String", yamlConfigRunner.getValueType("rootkey"));
+        assertEquals("java.lang.Stringxxxx", yamlConfigRunner.getValueType("rootkey"));
         assertEquals("rootvalue", yamlConfigRunner.getString("rootkey"));
 
         assertNull(yamlConfigRunner.getString("rootint"));
