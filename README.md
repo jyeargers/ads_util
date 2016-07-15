@@ -36,6 +36,6 @@
 
 `./gradlew publishToMavenLocal`
 
-## To deploy to artifactory:
+## To publish to artifactory:
 
-`./gradlew artifactoryPublish`
+Use [this](https://bamboo.cedexis.com/browse/AD-BUIL)
